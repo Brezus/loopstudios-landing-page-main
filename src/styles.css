@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --fs: 0.94rem;
+  --ff-main: "Alata", sans-serif;
+  --ff-secondary: "Josefin Sans", sans-serif;
+  --opacity-low: 0.6;
+  --opacity-high: 0.8;
+}
+
+.all-padding {
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+body {
+  font-size: var(--fs);
+  font-family: var(--ff-main);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.header {
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: contain;
+  padding-top: 3rem;
+  padding-bottom: 20em;
+}
+.header.active {
+  background-image: url("");
+  background: black;
+}
+
+.nav-ul {
+  /* display: none; */
+  position: absolute;
+  left: -120%;
+  list-style: none;
+  transition: all 0.3s ease;
+  top: -1%;
+  z-index: 1;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.nav-ul.active {
+  left: 0;
+  top: 50%;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.nav-ul.active .nav-list {
+  font-family: var(--ff-secondary);
+}
+.nav-ul.active .nav-link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.header.active .header-h1 {
+  opacity: 0;
+}
+
+.navigation {
+  height: 1.2rem;
+  align-items: center;
+}
+.burger {
+  cursor: pointer;
+  /* height: 10px; */
+}
+
+main {
+  display: grid;
+  row-gap: 4rem;
+}
+.header-h1 {
+  color: var(--White);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  border: 2px solid var(--White);
+  line-height: 0.8;
+  padding: 1rem;
+  margin-top: 11rem;
+  font-size: 2.7rem;
+  opacity: var(--opacity-high);
+  text-align: left;
+}
+.sec1,
+.sec2 {
+  flex-direction: column;
+  gap: 2rem;
+  /* padding-bottom: 5rem; */
+}
+
+.sec1-h2,
+.sec2-h2 {
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 0.9;
+}
+.sec1-p {
+  opacity: var(--opacity-low);
+}
+/* button {
+  margin-top: 11rem;
+} */
+.sec2 {
+  position: relative;
+  padding-bottom: 5rem;
+}
+.sec2-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.sec2-grid.show {
+  grid-template-rows: repeat(8, 100px);
+}
+
+.show-acomplishment {
+  display: block;
+}
+
+/* .acc {
+  display: none;
+} */
+
+.dp-none {
+  display: none;
+}
+.sec2-grid div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--White);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  position: relative;
+}
+.sec2-grid div h3 {
+  position: absolute;
+  width: 30%;
+  left: 1rem;
+  top: 40%;
+  text-align: left;
+  line-height: 1;
+  opacity: var(--opacity-high);
+}
+.desktop-btn {
+  display: none;
+}
+.mobile-btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: 2px solid black;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.earth {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-deep-earth.jpg");
+}
+.arcade {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-night-arcade.jpg");
+}
+.soccer {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-soccer-team.jpg");
+}
+.car {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-grid.jpg");
+}
+.sky {
+  background-image: linear-gradient(
+      to left,
+      rgba(10, 10, 10, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-from-above.jpg");
+}
+.pboreal {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-pocket-borealis.jpg");
+}
+.curiosity {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-curiosity.jpg");
+}
+.fisheye {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/mobile/image-fisheye.jpg");
+}
+footer {
+  background-color: black;
+  margin-top: 2rem;
+  padding-top: 3.5rem;
+  color: white;
+}
+.logo-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+}
+.logo-footer {
+  height: 40%;
+  width: 40%;
+}
+.list-footer {
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  padding-left: 0;
+}
+.list-footer li a {
+  text-decoration: none;
+  color: white;
+}
+.icons-cont {
+  width: 50%;
+  margin: 3rem auto;
+}
