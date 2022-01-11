@@ -1,6 +1,6 @@
 const burger = document.querySelector(".burger");
 const hiddenNav = document.querySelector(".nav-ul");
-const header = document.querySelector(".header");
+const header = document.getElementById("header");
 const acomplishmentsGrid = document.querySelector(".sec2-grid");
 const hiddenAccsGrid = document.querySelectorAll(".acc");
 const seeAllBtn = document.querySelector(".mobile-btn");
@@ -18,6 +18,7 @@ burger.addEventListener("click", () => {
 
 seeAllBtn.addEventListener("click", () => {
   if (showMorePressed === false) {
+    seeAllBtn.textContent = "SEE LESS";
     acomplishmentsGrid.classList.add("show");
     for (let i = 0; i < hiddenAccsGrid.length; i++) {
       hiddenAccsGrid[i].classList.add("show-acomplishment");
@@ -25,6 +26,7 @@ seeAllBtn.addEventListener("click", () => {
     }
     showMorePressed = true;
   } else if (showMorePressed) {
+    seeAllBtn.textContent = "SEE ALL";
     acomplishmentsGrid.classList.remove("show");
     for (let i = 0; i < hiddenAccsGrid.length; i++) {
       hiddenAccsGrid[i].classList.remove("show-acomplishment");
