@@ -310,11 +310,9 @@ small {
     background-position: center;
   }
   .header-h1 {
-    max-width: 30rem;
+    max-width: 35rem;
   }
-  /* #header {
-    
-  } */
+
   .sec2-grid {
     display: grid;
     grid-template-rows: 300px;
@@ -323,11 +321,11 @@ small {
   }
   .sec2-grid.show {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
   }
   .earth {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
@@ -335,7 +333,7 @@ small {
   }
   .arcade {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
@@ -343,7 +341,7 @@ small {
   }
   .soccer {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
@@ -351,7 +349,7 @@ small {
   }
   .car {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
@@ -359,15 +357,15 @@ small {
   }
   .sky {
     background-image: linear-gradient(
-        to left,
-        rgba(10, 10, 10, 0),
+        to bottom,
+        rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
       url("/images/desktop/image-from-above.jpg");
   }
   .pboreal {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
@@ -375,7 +373,7 @@ small {
   }
   .curiosity {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
@@ -383,11 +381,21 @@ small {
   }
   .fisheye {
     background-image: linear-gradient(
-        to left,
+        to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
       url("/images/desktop/image-fisheye.jpg");
+  }
+  .sec2-grid {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .sec2-grid.show {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 400px);
   }
 }
 
@@ -404,12 +412,13 @@ small {
   .sec2-h2 {
     font-size: 2.3rem;
   }
+
   .desktop-btn {
     display: inline-block;
     background-color: white;
     border: 1px solid black;
     text-transform: uppercase;
-    width: 160px;
+    width: 161px;
     height: 40px;
     font-size: 1.2rem;
     letter-spacing: 3px;
@@ -430,6 +439,11 @@ small {
     justify-content: space-between;
     align-items: center;
   }
+  .sec2-grid div h3 {
+    left: 2rem;
+    top: 79%;
+    font-size: 1.8rem;
+  }
 
   /* footer {
     margin-top: 0;
@@ -446,20 +460,21 @@ small {
     flex-direction: row;
     top: 0%;
     z-index: 1;
-    gap: 1.3rem;
+    gap: 2rem;
   }
 
   .nav-ul .nav-link {
     text-decoration: none;
+    font-size: 0.7rem;
     color: white;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   .header.active .header-h1 {
     opacity: 0;
   }
   .sec1 {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.8fr 1fr;
     grid-template-rows: 1fr;
     align-items: end;
   }
@@ -482,6 +497,13 @@ small {
   .sec1-p {
     font-size: 1rem;
   }
+  .sec2-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sec2-grid.show {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 400px);
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -493,6 +515,13 @@ small {
   }
   .all-padding {
     padding-inline: 9rem;
+  }
+  .sec2-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sec2-grid.show {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
   }
 }
 
