@@ -199,7 +199,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-deep-earth.jpg");
+    url("../images/mobile/image-deep-earth.jpg");
 }
 .arcade {
   background-image: linear-gradient(
@@ -207,7 +207,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-night-arcade.jpg");
+    url("../images/mobile/image-night-arcade.jpg");
 }
 .soccer {
   background-image: linear-gradient(
@@ -215,7 +215,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-soccer-team.jpg");
+    url("../images/mobile/image-soccer-team.jpg");
 }
 .car {
   background-image: linear-gradient(
@@ -223,7 +223,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-grid.jpg");
+    url("../images/mobile/image-grid.jpg");
 }
 .sky {
   background-image: linear-gradient(
@@ -231,7 +231,7 @@ main {
       rgba(10, 10, 10, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-from-above.jpg");
+    url("../images/mobile/image-from-above.jpg");
 }
 .pboreal {
   background-image: linear-gradient(
@@ -239,7 +239,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-pocket-borealis.jpg");
+    url("../images/mobile/image-pocket-borealis.jpg");
 }
 .curiosity {
   background-image: linear-gradient(
@@ -247,7 +247,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-curiosity.jpg");
+    url("../images/mobile/image-curiosity.jpg");
 }
 .fisheye {
   background-image: linear-gradient(
@@ -255,7 +255,7 @@ main {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/images/mobile/image-fisheye.jpg");
+    url("../images/mobile/image-fisheye.jpg");
 }
 /* sec2 grid setting                   end */
 
@@ -304,7 +304,7 @@ small {
   }
   #header {
     background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.719)),
-      url("/images/desktop/image-hero.jpg");
+      url("../images/desktop/image-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -329,7 +329,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-deep-earth.jpg");
+      url("../images/desktop/image-deep-earth.jpg");
   }
   .arcade {
     background-image: linear-gradient(
@@ -337,7 +337,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-night-arcade.jpg");
+      url("../images/desktop/image-night-arcade.jpg");
   }
   .soccer {
     background-image: linear-gradient(
@@ -345,7 +345,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-soccer-team.jpg");
+      url("../images/desktop/image-soccer-team.jpg");
   }
   .car {
     background-image: linear-gradient(
@@ -353,7 +353,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-grid.jpg");
+      url("../images/desktop/image-grid.jpg");
   }
   .sky {
     background-image: linear-gradient(
@@ -361,7 +361,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-from-above.jpg");
+      url("../images/desktop/image-from-above.jpg");
   }
   .pboreal {
     background-image: linear-gradient(
@@ -369,7 +369,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-pocket-borealis.jpg");
+      url("../images/desktop/image-pocket-borealis.jpg");
   }
   .curiosity {
     background-image: linear-gradient(
@@ -377,7 +377,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-curiosity.jpg");
+      url("../images/desktop/image-curiosity.jpg");
   }
   .fisheye {
     background-image: linear-gradient(
@@ -385,7 +385,7 @@ small {
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/images/desktop/image-fisheye.jpg");
+      url("../images/desktop/image-fisheye.jpg");
   }
   .sec2-grid {
     display: grid;
@@ -531,3 +531,4 @@ small {
     border: 10px solid black;
   }
 }
+
