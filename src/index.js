@@ -4,6 +4,7 @@ const header = document.getElementById("header");
 const acomplishmentsGrid = document.querySelector(".sec2-grid");
 const hiddenAccsGrid = document.querySelectorAll(".acc");
 const seeAllBtn = document.querySelector(".mobile-btn");
+const seeAllBtnDesktop = document.querySelector(".desktop-btn");
 let showMorePressed = false;
 
 burger.addEventListener("click", () => {
@@ -16,7 +17,10 @@ burger.addEventListener("click", () => {
   }
 });
 
-seeAllBtn.addEventListener("click", () => {
+seeAllBtn.addEventListener("click", showGrid);
+seeAllBtnDesktop.addEventListener("click", showGrid);
+
+function showGrid() {
   if (showMorePressed === false) {
     seeAllBtn.textContent = "SEE LESS";
     acomplishmentsGrid.classList.add("show");
@@ -34,4 +38,4 @@ seeAllBtn.addEventListener("click", () => {
     }
     showMorePressed = false;
   }
-});
+}
