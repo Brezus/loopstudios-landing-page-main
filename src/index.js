@@ -11,9 +11,9 @@ burger.addEventListener("click", () => {
   hiddenNav.classList.toggle("active");
   header.classList.toggle("active");
   if (burger.srcset != "/images/icon-close.svg") {
-    burger.srcset = "/images/icon-close.svg";
+    burger.srcset = "./images/icon-close.svg";
   } else {
-    burger.srcset = "/images/icon-hamburger.svg";
+    burger.srcset = "./images/icon-hamburger.svg";
   }
 });
 
