@@ -5,7 +5,18 @@ const acomplishmentsGrid = document.querySelector(".sec2-grid");
 const hiddenAccsGrid = document.querySelectorAll(".acc");
 const seeAllBtn = document.querySelector(".mobile-btn");
 const seeAllBtnDesktop = document.querySelector(".desktop-btn");
+const navLinks = document.getElementsByClassName("nav-link");
 let showMorePressed = false;
+
+for (navLink of navLinks) {
+  navLink.addEventListener("click", removeMenu);
+}
+
+function removeMenu() {
+  hiddenNav.classList.remove("active");
+  header.classList.remove("active");
+  burger.srcset = "/images/icon-hamburger.svg";
+}
 
 burger.addEventListener("click", () => {
   hiddenNav.classList.toggle("active");
