@@ -605,7 +605,7 @@ small {
   }
 }
 
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1400) {
   .sec1-head-p-cont {
     padding-left: 10rem;
     border: 10px solid black;
