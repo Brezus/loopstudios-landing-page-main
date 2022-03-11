@@ -566,7 +566,7 @@ small {
     grid-template-columns: repeat(3, 1fr);
   }
   footer {
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     grid-template-areas:
       "logo social social"
@@ -616,5 +616,8 @@ small {
   .header-h1 {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  footer {
+    grid-template-columns: repeat(3, 400px);
   }
 }
