@@ -15,16 +15,16 @@ for (navLink of navLinks) {
 function removeMenu() {
   hiddenNav.classList.remove("active");
   header.classList.remove("active");
-  burger.srcset = "/images/icon-hamburger.svg";
+  burger.srcset = "./images/icon-hamburger.svg";
 }
 
 burger.addEventListener("click", () => {
   hiddenNav.classList.toggle("active");
   header.classList.toggle("active");
-  if (burger.srcset != "/images/icon-close.svg") {
-    burger.srcset = "/images/icon-close.svg";
+  if (burger.srcset != "./images/icon-close.svg") {
+    burger.srcset = "./images/icon-close.svg";
   } else {
-    burger.srcset = "/images/icon-hamburger.svg";
+    burger.srcset = "./images/icon-hamburger.svg";
   }
 });
 
@@ -34,7 +34,7 @@ seeAllBtnDesktop.addEventListener("click", showGrid);
 function showGrid() {
   if (showMorePressed === false) {
     seeAllBtn.textContent = "SEE LESS";
-    seeAllBtnDesktop.textContent = "SEE LESS";
+    seeAllBtnDesktop.textContent = "LESS";
     acomplishmentsGrid.classList.add("show");
     for (let i = 0; i < hiddenAccsGrid.length; i++) {
       hiddenAccsGrid[i].classList.add("show-acomplishment");
