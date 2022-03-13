@@ -34,7 +34,7 @@ seeAllBtnDesktop.addEventListener("click", showGrid);
 function showGrid() {
   if (showMorePressed === false) {
     seeAllBtn.textContent = "SEE LESS";
-    seeAllBtnDesktop.textContent = "LESS";
+    seeAllBtnDesktop.textContent = "SEE LESS";
     acomplishmentsGrid.classList.add("show");
     for (let i = 0; i < hiddenAccsGrid.length; i++) {
       hiddenAccsGrid[i].classList.add("show-acomplishment");

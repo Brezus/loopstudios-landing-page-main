@@ -58,13 +58,6 @@
 }
 /* utility classes              end */
 
-/* max widths  */
-.navigation,
-section,
-footer > * {
-  max-width: 1200px;
-  margin-inline: auto;
-}
 body {
   font-size: var(--fs);
   font-family: var(--ff-main);
@@ -486,7 +479,7 @@ small {
     background-color: white;
     border: 1px solid black;
     text-transform: uppercase;
-    width: 161px;
+    width: 200px;
     height: 40px;
     font-size: 1.2rem;
     letter-spacing: 3px;
