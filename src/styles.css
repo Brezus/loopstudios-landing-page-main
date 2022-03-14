@@ -283,6 +283,13 @@ main {
     ),
     url("../images/mobile/image-fisheye.jpg");
 }
+.sec2-grid > div {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+}
+.sec2-grid > div:hover {
+  opacity: 0.65;
+}
 /* sec2 grid setting                   end */
 
 /* main/section css                     end */
