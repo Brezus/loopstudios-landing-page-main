@@ -185,7 +185,7 @@ main {
 }
 .sec2-grid div h3 {
   position: absolute;
-  width: 30%;
+  width: 60%;
   left: 1rem;
   top: 40%;
   text-align: left;
@@ -510,7 +510,7 @@ small {
   }
   .sec2-grid div h3 {
     left: 2rem;
-    top: 79%;
+    top: 80%;
     font-size: 1.8rem;
   }
 
